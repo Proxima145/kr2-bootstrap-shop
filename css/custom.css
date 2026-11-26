@@ -167,3 +167,63 @@ a { text-underline-offset: 0.2em; }
   .shop-hero .lead { font-size: 1.065rem; }
   .shop-card .card-img-top { aspect-ratio: 1.34; }
 }
+
+.shop-alert {
+  --bs-alert-color: #314e3d;
+  --bs-alert-bg: #e9efe6;
+  --bs-alert-border-color: #cbd9c9;
+}
+
+.btn-check:focus-visible + .btn {
+  outline: 2px solid var(--shop-focus);
+  outline-offset: 3px;
+}
+
+.catalog-section:has(#category-drinks:checked) .catalog-item:not([data-category="drinks"]),
+.catalog-section:has(#category-table:checked) .catalog-item:not([data-category="table"]),
+.catalog-section:has(#category-decor:checked) .catalog-item:not([data-category="decor"]) {
+  display: none;
+}
+
+.product-photo {
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--shop-panel);
+}
+
+.form-control,
+.form-select { border-color: #aab2a5; }
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: #649171;
+  box-shadow: 0 0 0 0.25rem #44845d26;
+}
+
+.form-check-input:checked {
+  border-color: var(--shop-green);
+  background-color: var(--shop-green);
+}
+
+.shop-form-dialog {
+  position: static;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+}
+
+.shop-panel { background: #fffdf7; }
+
+.order-response { display: none; }
+.shop-form-dialog:not([open]) + .order-response { display: block; }
+
+.accordion {
+  --bs-accordion-active-color: var(--shop-green-dark);
+  --bs-accordion-active-bg: #e6eee4;
+  --bs-accordion-btn-focus-box-shadow: inset 0 0 0 2px #7b9c85;
+}

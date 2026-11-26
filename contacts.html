@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Контакты учебной мастерской и ответы на вопросы об упаковке и уходе за керамикой.">
+  <title>Контакты и уход — Слой</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body id="top">
+  <a class="visually-hidden-focusable skip-link" href="#main">К содержимому</a>
+  <header class="border-bottom site-header">
+    <nav class="navbar navbar-expand-md py-3" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand wordmark" href="index.html" aria-label="Слой, главная">слой<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="site-menu">
+          <ul class="navbar-nav mx-md-auto gap-md-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+          </ul>
+          <a class="btn btn-outline-primary mt-2 mt-md-0" href="order.html">Оставить заявку</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="container py-4 py-lg-5" aria-labelledby="contact-title">
+      <nav aria-label="Путь к странице">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+        </ol>
+      </nav>
+      <h1 class="shop-display mb-4" id="contact-title">Контакты</h1>
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-5">
+          <div class="shop-value rounded-4 p-3 p-md-4">
+            <h2 class="h4">Мастерская «Слой»</h2>
+            <address class="text-body-secondary mb-3">Москва<br>Пн–пт, 10:00–18:00<br>hello@sloy.example</address>
+            <a class="btn btn-primary" href="order.html">К форме заявки</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <h2 class="shop-heading mb-3">Вопросы о керамике</h2>
+          <div class="accordion" id="care-faq">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#care-wash" aria-expanded="false" aria-controls="care-wash">Как мыть посуду?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="care-wash" data-bs-parent="#care-faq">
+                <div class="accordion-body">Используй тёплую воду и мягкую губку. Перед мытьём дай горячей посуде остыть.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#care-pack" aria-expanded="false" aria-controls="care-pack">Как упаковываются изделия?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="care-pack" data-bs-parent="#care-faq">
+                <div class="accordion-body">Каждый предмет лежит в отдельной коробке с наполнителем. В заявке можно указать, если упаковка нужна для подарка.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#care-color" aria-expanded="false" aria-controls="care-color">Почему изделия слегка отличаются?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="care-color" data-bs-parent="#care-faq">
+                <div class="accordion-body">Рисунок и оттенок глазури немного меняются при обжиге. Размеры каждой модели указаны в карточке.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid border-top shop-footer" id="contacts">
+    <div class="container py-4 py-md-5">
+      <div class="row g-3 align-items-center">
+        <div class="col-12 col-md-6">
+          <a class="d-inline-block wordmark" href="index.html" aria-label="Слой, главная">слой<span>.</span></a>
+          <p class="small text-body-secondary mt-2 mb-0">Учебный магазин керамики</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="d-flex flex-wrap gap-3 justify-content-md-end">
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#advantages">Преимущества</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
