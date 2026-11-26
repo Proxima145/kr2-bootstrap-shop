@@ -6,9 +6,11 @@
 
 Учебный магазин керамики с каталогом, карточкой изделия и формой заявки. Озеров Максим Дмитриевич, группа ЭФБО-11-25.
 
+[Открыть сайт на GitHub Pages](https://proxima145.github.io/kr2-bootstrap-shop/)
+
 ## Подключение Bootstrap
 
-Bootstrap 5.3.8 CSS и JS Bundle подключены через CDN. `css/custom.css` загружается после Bootstrap.
+Bootstrap 5.3.8 подключён локально. Стили находятся в `vendor/bootstrap/css/bootstrap.min.css`, а JS Bundle в `vendor/bootstrap/js/bootstrap.bundle.min.js`. После Bootstrap загружается `css/custom.css` с цветами и стилями магазина. Открой `index.html` в браузере. Для просмотра скачанного проекта достаточно файлов репозитория.
 
 ## Структура
 
@@ -22,6 +24,7 @@ Bootstrap 5.3.8 CSS и JS Bundle подключены через CDN. `css/custo
 | `css/custom.css` | Фирменные цвета и стили магазина |
 | `js/shop.js` | Открытие выбранной карточки и выбор изделия в заявке |
 | `images/` | Фото изделий |
+| `vendor/bootstrap/` | Bootstrap CSS, JS Bundle и лицензия |
 | `.gitignore` | Исключения для системных файлов и файлов редактора |
 
 ## Компоненты
