@@ -14,18 +14,18 @@
   <header class="border-bottom site-header">
     <nav class="navbar navbar-expand-md py-3" aria-label="Основная навигация">
       <div class="container">
-        <a class="navbar-brand wordmark" href="#top" aria-label="Слой, главная">слой<span>.</span></a>
+        <a class="navbar-brand wordmark" href="index.html" aria-label="Слой, главная">слой<span>.</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Открыть меню">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="site-menu">
           <ul class="navbar-nav mx-md-auto gap-md-3">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="#popular">Каталог</a></li>
-            <li class="nav-item"><a class="nav-link" href="#featured">Товар</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
           </ul>
-          <a class="btn btn-outline-primary mt-2 mt-md-0" href="#contacts">Оставить заявку</a>
+          <a class="btn btn-outline-primary mt-2 mt-md-0" href="order.html">Оставить заявку</a>
         </div>
       </div>
     </nav>
@@ -39,8 +39,8 @@
             <h1 class="shop-display mb-3" id="hero-title">Керамика<br>для дома</h1>
             <p class="lead text-body-secondary mb-4">Кружки, пиалы и вазы из каменной массы. Формы и цвета, которые легко сочетать.</p>
             <div class="d-flex flex-wrap align-items-center gap-2 gap-sm-3">
-              <a class="btn btn-primary px-4" href="#popular">Смотреть каталог</a>
-              <a class="btn btn-outline-primary" href="#featured">Кружка «Овёс»</a>
+              <a class="btn btn-primary px-4" href="catalog.html">Смотреть каталог</a>
+              <a class="btn btn-outline-primary" href="product.html?item=oves">Кружка «Овёс»</a>
             </div>
           </div>
           <div class="col-12 col-lg-7">
@@ -82,9 +82,10 @@
     <section class="container my-4 my-lg-5" id="popular" aria-labelledby="popular-title">
       <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-3">
         <h2 class="shop-heading mb-0" id="popular-title">Популярные изделия</h2>
+        <a href="catalog.html">Весь каталог <span aria-hidden="true">→</span></a>
       </div>
       <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4" id="item-oves">
+          <div class="col-12 col-md-6 col-lg-4">
             <article class="card h-100 shop-card">
               <img class="card-img-top" src="images/oves.webp" width="510" height="510" alt="Песочная кружка с крапинками и широкой ручкой" loading="lazy">
               <div class="card-body d-flex flex-column p-3 p-xl-4">
@@ -96,12 +97,12 @@
                 <p class="card-text text-body-secondary">Для кофе с молоком и долгих завтраков.</p>
                 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-auto">
                   <strong>1 590 ₽</strong>
-                  <a class="btn btn-outline-primary btn-sm" href="#item-oves" aria-label="Подробнее о товаре Кружка «Овёс»">Подробнее</a>
+                  <a class="btn btn-outline-primary btn-sm" href="product.html?item=oves" aria-label="Подробнее о товаре Кружка «Овёс»">Подробнее</a>
                 </div>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-lg-4" id="item-zarya">
+          <div class="col-12 col-md-6 col-lg-4">
             <article class="card h-100 shop-card">
               <img class="card-img-top" src="images/zarya.webp" width="510" height="510" alt="Глянцевая терракотовая пиала на розовом фоне" loading="lazy">
               <div class="card-body d-flex flex-column p-3 p-xl-4">
@@ -113,12 +114,12 @@
                 <p class="card-text text-body-secondary">Широкая пиала для ягод, каши или супа.</p>
                 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-auto">
                   <strong>1 790 ₽</strong>
-                  <a class="btn btn-outline-primary btn-sm" href="#item-zarya" aria-label="Подробнее о товаре Пиала «Заря»">Подробнее</a>
+                  <a class="btn btn-outline-primary btn-sm" href="product.html?item=zarya" aria-label="Подробнее о товаре Пиала «Заря»">Подробнее</a>
                 </div>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-lg-4" id="item-shalfei">
+          <div class="col-12 col-md-6 col-lg-4">
             <article class="card h-100 shop-card">
               <img class="card-img-top" src="images/shalfei.webp" width="510" height="510" alt="Матовая серо-зелёная тарелка с приподнятым бортиком" loading="lazy">
               <div class="card-body d-flex flex-column p-3 p-xl-4">
@@ -130,7 +131,7 @@
                 <p class="card-text text-body-secondary">Широкая тарелка с приподнятым краем.</p>
                 <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-auto">
                   <strong>1 690 ₽</strong>
-                  <a class="btn btn-outline-primary btn-sm" href="#item-shalfei" aria-label="Подробнее о товаре Тарелка «Шалфей»">Подробнее</a>
+                  <a class="btn btn-outline-primary btn-sm" href="product.html?item=shalfei" aria-label="Подробнее о товаре Тарелка «Шалфей»">Подробнее</a>
                 </div>
               </div>
             </article>
@@ -142,14 +143,14 @@
     <div class="container py-4 py-md-5">
       <div class="row g-3 align-items-center">
         <div class="col-12 col-md-6">
-          <a class="d-inline-block wordmark" href="#top" aria-label="Слой, главная">слой<span>.</span></a>
+          <a class="d-inline-block wordmark" href="index.html" aria-label="Слой, главная">слой<span>.</span></a>
           <p class="small text-body-secondary mt-2 mb-0">Учебный магазин керамики</p>
         </div>
         <div class="col-12 col-md-6">
           <div class="d-flex flex-wrap gap-3 justify-content-md-end">
-            <a href="#popular">Каталог</a>
-            <a href="#advantages">Преимущества</a>
-            <a href="#contacts">Контакты</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#advantages">Преимущества</a>
+            <a href="contacts.html">Контакты</a>
           </div>
         </div>
       </div>
