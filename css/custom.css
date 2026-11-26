@@ -1,0 +1,169 @@
+:root {
+  --shop-ink: #22352d;
+  --shop-green: #2c5845;
+  --shop-green-dark: #1e4031;
+  --shop-paper: #fcfaf4;
+  --shop-panel: #f2eee3;
+  --shop-edge: #ded8c8;
+  --shop-focus: #8b4e2e;
+  --bs-body-color: var(--shop-ink);
+  --bs-body-bg: var(--shop-paper);
+  --bs-secondary-color: #536055;
+  --bs-link-color-rgb: 40, 82, 61;
+  --bs-link-hover-color-rgb: 30, 64, 49;
+  --bs-border-color: var(--shop-edge);
+  --bs-body-font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+main { min-height: 63vh; }
+
+a { text-underline-offset: 0.2em; }
+
+:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.navbar-toggler:focus-visible {
+  outline: 2px solid var(--shop-focus);
+  outline-offset: 3px;
+}
+
+.skip-link:focus {
+  position: absolute;
+  z-index: 1100;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  color: var(--shop-paper);
+  background: var(--shop-green-dark);
+}
+
+.site-header { background: var(--shop-paper); }
+
+.site-header .nav-link { color: var(--bs-secondary-color); }
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: var(--shop-green-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+.wordmark {
+  color: var(--shop-green-dark);
+  font: 700 2.5rem/0.85 Georgia, serif;
+  letter-spacing: -0.09em;
+  text-decoration: none;
+}
+
+.wordmark span { color: #aa684a; }
+
+.btn-primary {
+  --bs-btn-bg: var(--shop-green);
+  --bs-btn-border-color: var(--shop-green);
+  --bs-btn-hover-bg: var(--shop-green-dark);
+  --bs-btn-hover-border-color: var(--shop-green-dark);
+  --bs-btn-active-bg: var(--shop-green-dark);
+  --bs-btn-active-border-color: var(--shop-green-dark);
+  --bs-btn-focus-shadow-rgb: 51, 94, 73;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--shop-green);
+  --bs-btn-border-color: var(--shop-green);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--shop-green);
+  --bs-btn-hover-border-color: var(--shop-green);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--shop-green-dark);
+  --bs-btn-active-border-color: var(--shop-green-dark);
+  --bs-btn-focus-shadow-rgb: 51, 94, 73;
+}
+
+.shop-hero {
+  color: #f8f5eb;
+  background: #234135;
+  --bs-secondary-color: #dce6db;
+}
+
+.shop-hero .btn-primary {
+  --bs-btn-color: #233b2e;
+  --bs-btn-bg: #f6ead2;
+  --bs-btn-border-color: #f6ead2;
+  --bs-btn-hover-color: #233b2e;
+  --bs-btn-hover-bg: #fff7e8;
+  --bs-btn-hover-border-color: #fff7e8;
+  --bs-btn-active-color: #233b2e;
+  --bs-btn-active-bg: #f0dfbd;
+  --bs-btn-active-border-color: #f0dfbd;
+}
+
+.shop-hero .btn-outline-primary {
+  --bs-btn-color: #f8f5eb;
+  --bs-btn-border-color: #b8ccbd;
+  --bs-btn-hover-color: #233b2e;
+  --bs-btn-hover-bg: #f8f5eb;
+  --bs-btn-hover-border-color: #f8f5eb;
+}
+
+.shop-hero :focus-visible { --shop-focus: #f8d99c; }
+
+.shop-kicker {
+  color: #e5dac0;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.shop-display,
+.shop-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 1.01;
+  text-wrap: balance;
+}
+
+.shop-display { font-size: clamp(2.7rem, 6vw, 5.7rem); }
+.shop-heading { font-size: clamp(1.85rem, 3.6vw, 3.5rem); }
+
+.shop-hero .lead { max-width: 26rem; }
+
+.shop-hero-photo {
+  aspect-ratio: 1.52;
+  object-fit: cover;
+  background: #ad7145;
+}
+
+.shop-value { background: var(--shop-panel); }
+
+.shop-card {
+  --bs-card-bg: #fffdf7;
+  --bs-card-border-color: var(--shop-edge);
+  overflow: hidden;
+}
+
+.shop-card .card-img-top {
+  width: 100%;
+  aspect-ratio: 1.22;
+  object-fit: cover;
+  background: var(--shop-panel);
+}
+
+.shop-card:hover,
+.shop-card:focus-within { --bs-card-border-color: #b0b7a3; }
+
+.shop-badge {
+  color: #315340;
+  background: #e5ecdf;
+  font-weight: 650;
+}
+
+.shop-footer { background: #ece9df; }
+
+@media (max-width: 575.98px) {
+  .shop-display { letter-spacing: -0.045em; }
+  .shop-hero .lead { font-size: 1.065rem; }
+  .shop-card .card-img-top { aspect-ratio: 1.34; }
+}
